@@ -1,4 +1,4 @@
-package friend_overlay_src;
+package overlay;
 
 import javax.crypto.SecretKey;
 import java.security.PublicKey;

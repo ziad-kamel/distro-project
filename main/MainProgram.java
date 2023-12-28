@@ -1,4 +1,4 @@
-package project_main_src;
+package main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,9 +13,9 @@ import java.util.Scanner;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import connection_overlay_src.ConnectionInterface;
-import friend_overlay_src.FriendOverlay;
-import friend_overlay_src.Keys;
+import connectionOverlay.ConnectionInterface;
+import overlay.FriendOverlay;
+import overlay.Keys;
 
 /**
  * Main class that calls all other classes needed to create Connection Overlay
@@ -71,10 +71,10 @@ public class MainProgram {
         String pubfile ="";
         String name = "";
     	if (home.length() > 0) {
-    		pubfile = "project_main_src/" + home + "/rsa.pub";
-    		keyfile = "project_main_src/" + home + "/rsa.key";
+    		pubfile = "main/" + home + "/rsa.pub";
+    		keyfile = "main/" + home + "/rsa.key";
     		
-			String path = "project_main_src/" + home + "/id.txt";
+			String path = "main/" + home + "/id.txt";
 			File f = new File(path);
     			if (f.exists() && !f.isDirectory()) {
     						try {

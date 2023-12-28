@@ -1,4 +1,4 @@
-package connection_overlay_src;
+package connectionOverlay;
 
 import java.io.IOException;
 import java.net.ServerSocket;

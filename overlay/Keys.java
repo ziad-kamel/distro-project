@@ -1,4 +1,4 @@
-package friend_overlay_src;
+package overlay;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
@@ -24,12 +24,12 @@ public class  Keys {
     /**
      * Location of file for public key.
      */
-    private String file_pub = "project_main_src/rsa.pub";
+    private String file_pub = "main/rsa.pub";
 
     /**
      * Location of file for private key.
      */
-    private String file_priv = "project_main_src/rsa.key";
+    private String file_priv = "main/rsa.key";
 
     private PrivateKey privateKey = null;
     private PublicKey publicKey = null;

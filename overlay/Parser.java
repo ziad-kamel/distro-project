@@ -1,4 +1,4 @@
-package friend_overlay_src;
+package overlay;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ public class Parser {
     /**
      * Location of friends.csv file.
      */
-    private String csv_loc = "project_main_src/.friends.csv";
+    private String csv_loc = "main/.friends.csv";
 
 
     /**
@@ -134,7 +134,7 @@ public class Parser {
      * @param home
      */
     public void setCSVLocation(String home ){
-        this.csv_loc="project_main_src/"+home+"/.friends.csv";
+        this.csv_loc= "main/" +home+"/.friends.csv";
     }
 
 }

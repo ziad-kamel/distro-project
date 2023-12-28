@@ -1,4 +1,4 @@
-package friend_overlay_src;
+package overlay;
 
 import java.io.*;
 import java.security.PrivateKey;

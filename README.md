@@ -19,7 +19,7 @@ Flooding-based Distributed File Sharing System
 3. Run a device:
 
     ```bash
-    java project_main_src.MainProgram
+    java main.MainProgram
     ```
 
 4. Select the device ID (e.g. `1` for Bob, `2` for Claire, `3` for Emily)
@@ -43,7 +43,7 @@ Flooding-based Distributed File Sharing System
 - The code is precompiled for JDK 17. To recompile:
 
     ```
-    javac -cp "<project directory>" project_main_src/MainProgram.java 
+    javac -cp "<project directory>" main/MainProgram.java 
     ```
 
 - Cipher.exe is required on Windows for encryption. See [Microsoft Docs](https://support.microsoft.com/en-us/topic/cipher-exe-security-tool-for-the-encrypting-file-system-56c85edd-85cf-ac07-f2f7-ca2d35dab7e4)

@@ -1,4 +1,4 @@
-package friend_overlay_src;
+package overlay;
 
 import java.time.LocalTime;
 

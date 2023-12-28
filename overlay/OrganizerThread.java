@@ -1,15 +1,12 @@
-package friend_overlay_src;
+package overlay;
 
 import java.io.*;
 import java.security.*;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Vector;
 import java.util.concurrent.BlockingQueue;
@@ -399,7 +396,7 @@ public class OrganizerThread implements Runnable {
 		HashMap<String, FileToShare> Files = new HashMap<String, FileToShare>();
 		if (home.length() > 0) {
 		
-			String path = "project_main_src/" + home;
+			String path = "main/" + home;
 			File f = new File(path);
 			if (f.exists() && f.isDirectory()) {
 				File[] files = new File(path).listFiles();
@@ -500,7 +497,7 @@ public class OrganizerThread implements Runnable {
 		
 		if (wanted.contains(head)) {			
 			System.out.println("Friend Overlay: Received file " + head);
-			String path = "project_main_src/" + home + "/" + head;
+			String path = "main/" + home + "/" + head;
 		    BufferedWriter writer;
 			try {
 				writer = new BufferedWriter(new FileWriter(path));
@@ -536,7 +533,7 @@ public class OrganizerThread implements Runnable {
 		//System.out.println("update contacts!");
 		String header="id,ipaddress,port,publickey\n";
 
-		String filename= "project_main_src/.friends.csv";
+		String filename= "main/.friends.csv";
 
         try {
             	File file = new File(filename);

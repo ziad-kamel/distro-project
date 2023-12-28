@@ -1,4 +1,4 @@
-package connection_overlay_src;
+package connectionOverlay;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.concurrent.BlockingQueue;
 
-import friend_overlay_src.Keys;
+import overlay.Keys;
 
 /**
  * Each ConnectionHandler works on one socket connection to another peer.
