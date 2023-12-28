@@ -1,1 +1,1 @@
-some awesome content
+some awesome content inside [SECOND FILE]
