@@ -1,4 +1,4 @@
-# distro-project
+# Distributed Systems Final Project
 
 Flooding-based Distributed File Sharing System
 
