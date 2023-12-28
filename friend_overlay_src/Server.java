@@ -55,13 +55,11 @@ public class Server implements Runnable {
      * @return true if received connection was verifyed and a PeerConnection was started.
      */
     public boolean acceptConnections() {
-        // Öffnet Service auf Port und nimmt Traffic auf dem Port an
 
             try {
                 Socket socket = MyService.accept();
                 //System.out.println("FriendOverlay: Received connection request.");
 
-                //überprüft ob der Peer bekannt ist. Falls ja, gibt Friend Object zurück.
                 PrivateKey key=orga.getKey();
                 Friend f=verifyPeer(socket,key);
                 if( f!=null) {
@@ -83,7 +81,6 @@ public class Server implements Runnable {
 
     }
 
-    //Überfrüft ob Peer bekannt ist anhand dessen Public Keys. Falls ja, gibt das dazugehörige Friend-Object zurück.
 
     /**
      * This method reads the first message sent by a peer to the ServerSocket.

@@ -93,7 +93,7 @@ public class  Keys {
      * Creates a neew pair of asymmetric keys using the RSA algorithm.
      * Randomization is added to the key generation by using SecureRandom.
      * Privatekey should be of type  PKCS#8. Publickey should be of type X.509.
-     * Keys are 512 characters long.
+     * Keys are 512 (privatekey changed from 128) characters long.
      * The keys are then saved to files by calling toFile() using the parameters file_pub and file_priv.
      */
     private void createKeys() {
@@ -150,7 +150,7 @@ public class  Keys {
 
     /**
      * Saves a key (any type of key) to a file using the path 'filename'.
-     * Before saving the key, it encodes it with Base64 to make it human-readable.
+     * Before saving the key, it encodes it with Base64 (changed from SHA256) to make it human-readable.
      * @param k
      * @param filename
      */
@@ -175,7 +175,7 @@ public class  Keys {
 
     /**
      * Reads PrivateKey from file in location file_priv.
-     * PrivateKey has to be encoded with Base64 and of type PKCS8.
+     * PrivateKey has to be encoded with Base64 (changed from SHA256) and of type PKCS8.
      */
     private void getPrivateKeyFromFile() {
 

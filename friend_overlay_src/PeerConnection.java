@@ -122,7 +122,6 @@ public class PeerConnection{
             PrintStream output = sending.getOutputSteam();
             BufferedReader br=reciving.getReader();
 
-            //senden der ersten Nachricht an Peer zur verifizierung
             String peer_pub=k.keytoString(orga.getPub());
             String secret=peer_pub.substring(0,50);
             String secret_encrypt=k.encrypt( secret ,friend.getPublickey() );
@@ -132,7 +131,6 @@ public class PeerConnection{
             Timestamp earlier=new Timestamp(System.currentTimeMillis());
             while( (now.getTime() - earlier.getTime()) < 200) {
 
-                //Empfang, dass connection akzeptiert wurde
                 String newline = br.readLine();
 
                 //System.out.println("FriendOverlay:"+socket.getPort());
@@ -143,7 +141,6 @@ public class PeerConnection{
                 if(msg_parts.length==2) {
 
                     if(msg_parts[0].equals("Ok")){
-                        //Verbindung wurde  akzeptiert
 
                         SecretKey skey= k.stringToSecretKey(msg_parts[1]);
                         friend.setSkey(skey);

@@ -3,12 +3,12 @@ package friend_overlay_src;
 import java.time.LocalTime;
 
 public class FileToShare {
-	public String identifier; //ID, Name, Hash oder sowas
-	public Boolean own; //true falls wir die Datei selbst haben
-	private Friend friend; //Freund (der die Datei liefern kann)
-	private String path; //Dateipfad (falls man die Datei selbst hat)
+	public String identifier;
+	public Boolean own;
+	private Friend friend;
+	private String path;
 	public LocalTime Timeout;
-	private static long timeoutDuration = 1800;//Wie lange bis eine Datei als veraltet gilt, in Sekunden, default: halbe Stunde
+	private static long timeoutDuration = 1800;
 	
 	FileToShare(String identifier, boolean own, Friend f, String path){
 		this.Timeout = LocalTime.now().plusSeconds(timeoutDuration);

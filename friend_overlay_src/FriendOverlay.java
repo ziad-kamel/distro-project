@@ -141,7 +141,6 @@ public class FriendOverlay {
 		}
 	}
 
-	//Schreibt Freund in CSV Datei und hängt ihn an die momentan verwendete Contacs Listen in Orga und FriendOverlay an.
 
 	/**
 	 * Adds new Friend into the system by writing the information to the CSV file (by calling addFriendtoCSV in Parser).
